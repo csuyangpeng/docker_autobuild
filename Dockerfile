@@ -10,9 +10,6 @@ RUN mkdir /buildfarm
 
 COPY installers /tmp/installers
 #!/usr/bin/env bash
-
-# Fail on first error.
-
 # Install common tools.
 RUN sudo apt-get update -y
 RUN sudo apt-get upgrade -y
